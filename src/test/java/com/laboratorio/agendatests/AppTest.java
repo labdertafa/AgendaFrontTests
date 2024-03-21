@@ -15,7 +15,8 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/java/features",
+		dryRun = false,
+		features = "src/test/resources/features",
 		glue = {"com.laboratorio.gluecode"},
 		plugin = {"pretty", "summary", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 		snippets = SnippetType.CAMELCASE

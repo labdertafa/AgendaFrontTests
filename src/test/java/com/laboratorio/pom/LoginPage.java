@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
 	private String contenidoMensajeErrorPassword = "La contraseña es obligatoria";
 	private By emailWrongFormatMessageLocator = By.xpath("/html/body/app-root/app-login/section/div/div/div[2]/div/form/div[1]/span");
 	private String contenidoMensajeEmailIncorrecto = "Formato de dirección de correo inválido";
-	private By signUpLinkLocator = By.xpath("/html/body/app-root/app-login/section/div/div/div[2]/div/form/div[3]/div[2]/button");
+	private By signUpLinkLocator = By.xpath("/html/body/app-root/app-login/section/div/div/div[2]/div/form/div[3]/div[2]/a");
 	
 	
 	public LoginPage(WebDriver driver) {
